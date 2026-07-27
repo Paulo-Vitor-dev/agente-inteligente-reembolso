@@ -1,0 +1,33 @@
+# Estrutura de Saída do Agente
+
+O agente retorna um objeto JSON estruturado.
+
+## Exemplo
+
+```json
+{
+  "nome": "Alon",
+  "email": "alon@exemplo.com",
+  "produto_reembolso": "Software de Contabilidade",
+  "comentario": "O software é bom, mas tive problemas pessoais.",
+  "sentimento": "neutro",
+  "cliente_encontrado": true,
+  "nome_completo": "Alon Pinheiro",
+  "total_gasto_cliente": 1000,
+  "dias_desde_compra": 15
+}
+```
+
+## Campos
+
+| Campo | Tipo | Descrição |
+|---|---|---|
+| `nome` | string | Nome informado no formulário |
+| `email` | string | E-mail do cliente |
+| `produto_reembolso` | string | Produto relacionado ao pedido |
+| `comentario` | string | Justificativa do cliente |
+| `sentimento` | string | Classificação do comentário |
+| `cliente_encontrado` | boolean | Indica se o cliente foi localizado |
+| `nome_completo` | string | Nome armazenado na base |
+| `total_gasto_cliente` | number | Total gasto pelo cliente |
+| `dias_desde_compra` | number | Dias corridos desde a compra |

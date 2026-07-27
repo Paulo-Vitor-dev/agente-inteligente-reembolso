@@ -1,0 +1,80 @@
+# Regras de Resposta
+
+Este documento apresenta as respostas utilizadas para cada cenário identificado pelo workflow.
+
+## Cenário 1 — Cliente comum
+
+### Condições
+
+- Solicitação fora do prazo de 7 dias;
+- cliente não classificado como VIP;
+- sentimento positivo, neutro ou negativo comum.
+
+### Assunto
+
+Retorno sobre sua solicitação de reembolso
+
+### Mensagem
+
+Olá, [NOME_CLIENTE].
+
+Analisei sua solicitação de reembolso.
+
+Verifiquei que a compra foi efetuada há mais de 7 dias. Como o prazo de garantia incondicional é de 7 dias corridos, infelizmente não será possível prosseguir automaticamente com o reembolso.
+
+Caso tenha dúvidas sobre o acesso ou uso do produto, a equipe de suporte permanece disponível para ajudar.
+
+Atenciosamente,  
+Equipe de Atendimento
+
+---
+
+## Cenário 2 — Cliente VIP
+
+### Condições
+
+- Solicitação fora do prazo;
+- total gasto pelo cliente superior a R$ 3.000.
+
+### Assunto
+
+Atualização sobre seu pedido de reembolso
+
+### Mensagem
+
+Olá, [NOME_CLIENTE].
+
+Recebemos sua solicitação de reembolso e identificamos que o prazo de garantia de 7 dias já expirou.
+
+Entretanto, considerando seu histórico como cliente, o pedido será encaminhado para uma análise especial da equipe financeira.
+
+A equipe responsável deverá entrar em contato em até 24 horas.
+
+Atenciosamente,  
+Equipe de Atendimento
+
+---
+
+## Cenário 3 — Sentimento muito negativo
+
+### Condições
+
+- Solicitação fora do prazo;
+- comentário classificado como `muito_negativo`.
+
+### Assunto
+
+Recebemos sua mensagem — caso encaminhado para análise
+
+### Mensagem
+
+Olá, [NOME_CLIENTE].
+
+Lemos atentamente seu comentário e lamentamos sua insatisfação.
+
+O sistema identificou que a compra está fora do prazo de garantia de 7 dias. Entretanto, considerando a situação relatada, o atendimento não será encerrado automaticamente.
+
+O caso foi encaminhado com prioridade para a equipe responsável, que analisará a situação e retornará o contato o mais breve possível.
+
+Atenciosamente,  
+Equipe de Atendimento

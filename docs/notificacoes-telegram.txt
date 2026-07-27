@@ -1,0 +1,48 @@
+# Notificações do Telegram
+
+O workflow envia notificações internas pelo Telegram quando uma solicitação exige análise humana.
+
+## 1. Cliente VIP
+
+### Destinatário
+
+Equipe financeira.
+
+### Mensagem
+
+Pedido de reembolso fora do prazo
+
+Foi recebida uma solicitação de reembolso de um cliente que ultrapassou o prazo de 7 dias.
+
+O sistema interrompeu o processamento automático, mas o cliente foi identificado como VIP. O caso deve ser avaliado pela equipe financeira para verificar a possibilidade de uma exceção.
+
+Prazo informado ao cliente: retorno em até 24 horas.
+
+Cliente: [NOME_CLIENTE]  
+E-mail: [EMAIL_CLIENTE]  
+Produto: [PRODUTO_REEMBOLSO]  
+Dias desde a compra: [DIAS_DESDE_COMPRA]
+
+---
+
+## 2. Sentimento muito negativo
+
+### Destinatário
+
+Gerência ou equipe responsável.
+
+### Mensagem
+
+Atenção: solicitação crítica de reembolso
+
+Foi recebida uma solicitação fora do prazo com comentário classificado como muito negativo.
+
+Comentário:
+
+"[COMENTARIO]"
+
+Para evitar o encerramento inadequado do atendimento, o sistema encaminhou o caso para análise humana.
+
+Cliente: [NOME_CLIENTE]  
+E-mail: [EMAIL_CLIENTE]  
+Produto: [PRODUTO_REEMBOLSO]

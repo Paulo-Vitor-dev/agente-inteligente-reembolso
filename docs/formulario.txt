@@ -1,0 +1,20 @@
+# Formulário de Reembolso
+
+O workflow pode ser iniciado por um formulário integrado ao Webhook do n8n.
+
+## Campos esperados
+
+- Nome;
+- E-mail;
+- produto para o qual o cliente solicita reembolso;
+- comentário explicando a solicitação.
+
+## Integração
+
+O formulário envia os dados para um Webhook configurado no n8n por meio de uma requisição HTTP POST.
+
+## Demonstração
+
+O formulário utilizado durante o desenvolvimento foi criado com o Tally.
+
+> O link público pode ser alterado ou removido caso o formulário não esteja mais ativo.
